@@ -8,7 +8,8 @@ class TestLogin():
     @pytest.fixture()
     def test_setup(self):
         global driver
-        driver = webdriver.Chrome(executable_path="E:/Python Selenium Projects/Pytest_Projet_ex/Drivers/chromedriver.exe")
+        # driver = webdriver.Chrome(executable_path="E:/Python Selenium Projects/Pytest_Projet_ex/Drivers/chromedriver.exe")
+        driver = webdriver.Chrome(executable_path="../Drivers/chromedriver.exe")
         driver.implicitly_wait(10)
         driver.maximize_window()
         driver.get("https://opensource-demo.orangehrmlive.com/")
