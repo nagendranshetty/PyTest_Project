@@ -19,7 +19,7 @@ class TestLogin():
         print("Test completed")
 
     def test_loginTestCase(self, test_setup):
-        driver.find_element_by_id("txtUsername").send_keys("Admin")
+        driver.find_element_by_id("txtUsername545").send_keys("Admin")
         driver.find_element_by_id("txtPassword").send_keys("admin123")
         driver.find_element_by_id("btnLogin").click()
         time.sleep(5)
