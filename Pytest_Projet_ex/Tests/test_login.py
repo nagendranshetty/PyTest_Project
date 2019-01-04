@@ -8,7 +8,8 @@ class TestLogin():
     @pytest.fixture()
     def test_setup(self):
         global driver
-        driver = webdriver.Chrome(executable_path="E:/Python Selenium Projects/Pytest_Projet_ex/Drivers/chromedriver.exe")
+        # driver = webdriver.Chrome(executable_path="E:/Python Selenium Projects/Pytest_Projet_ex/Drivers/chromedriver.exe")
+        driver = webdriver.Chrome(executable_path="../Drivers/chromedriver.exe")
         driver.implicitly_wait(10)
         driver.maximize_window()
         driver.get("https://opensource-demo.orangehrmlive.com/")
@@ -18,7 +19,7 @@ class TestLogin():
         print("Test completed")
 
     def test_loginTestCase(self, test_setup):
-        driver.find_element_by_id("txtUsername").send_keys("Admin")
+        driver.find_element_by_id("txtUsername545").send_keys("Admin")
         driver.find_element_by_id("txtPassword").send_keys("admin123")
         driver.find_element_by_id("btnLogin").click()
         time.sleep(5)
