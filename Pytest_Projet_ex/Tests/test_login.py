@@ -15,7 +15,7 @@ class TestLogin():
         yield
         driver.close()
         driver.quit()
-        print("Test completed")
+        # print("Test completed")
 
     def test_loginTestCase(self, test_setup):
         driver.find_element_by_id("txtUsername").send_keys("Admin")
